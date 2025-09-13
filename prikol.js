@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cats = [];
     const catWidth = 300;
     const catHeight = 150;
-    const pageStart = 14700;
+    const pageStart = 24700;
 
     function getRandomCatGif() {
         const randomIndex = Math.floor(Math.random() * catGifs.length);
