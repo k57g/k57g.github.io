@@ -1,0 +1,471 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, comic-sans-ms;
+    background-color: #130a0a;
+    color: #30e0e0;
+    line-height: 1.72;
+    margin: 0 auto;
+    transform: rotate(0deg);
+}
+
+.container {
+    background-color: rgba(20, 30, 40, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+    padding: 10px;
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    transform-origin: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 90px;
+    padding-bottom: 37px;
+    border-bottom: 3px solid #5a2a82;
+}
+h1 {
+    font-size: 6rem;
+    color: #efa5f3;
+    text-shadow: 0 0 10px rgba(80, 80, 245, 2.7);
+    margin: 140px 0;
+    letter-spacing: 12px;
+}
+h2 {
+    font-size: 3.2rem;
+    color: #f9b5e9;
+    margin: 45px 0;
+    border-bottom: 2px solid #4a3a5a;
+    padding-bottom: 28px;
+    letter-spacing: 25px;
+}
+h3 {
+    font-size: 2.4rem;
+    color: #c875f0;
+    margin: 20px 0 12px;
+}
+h3r {
+    transform: rotate(180deg);
+    position: absolute;
+    top: -40px;
+    left: 300px;
+    font-size: 2.4rem;
+    color: #c875f0;
+    margin: 20px 0 12px;
+}
+h4 {
+    font-size: 2.6rem;
+    color: #a875c9;
+    margin: 18px 0 10px;
+}
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+lol {
+    transform: rotate(-20deg);
+    position: absolute;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 8px 0 1px;
+}
+blockquote {
+    background-color: rgba(50, 40, 60, 0.6);
+    border-left: 4px solid #8a4db8;
+    padding: 12px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+}
+.chapter {
+    margin: 50px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(35, 30, 45, 0.7);
+    border-radius: 8px;
+    border: 1px solid #4a3a5a;
+    backdrop-filter: blur(5px);
+    transition: transform 0.1s ease;
+    transform-origin: center;
+}
+.chapterr {
+    transform: rotate(30deg);
+    position: absolute;
+    margin: 50px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(35, 30, 45, 0.7);
+    border-radius: 8px;
+    border: 1px solid #4a3a5a;
+    backdrop-filter: blur(5px);
+    transition: transform 0.1s ease;
+    transform-origin: center;
+}
+.chapter-title {
+    background: linear-gradient(90deg, #0a2692, #6a1a52);
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin: -20px -20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.glitch-text {
+    position: relative;
+    display: inline-block;
+}
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.glitch-text::before {
+    left: 6px;
+    text-shadow: -3px 0 #1f20f8;
+    clip: rect(440px, 450px, 560px, 0);
+    animation: glitch-anim 7s infinite linear alternate-reverse;
+}
+
+@keyframes cool-iridescent-anim {
+    0% {
+        background-color: #00afa9;
+    }
+    50% {
+        background-color: #6a1a52;
+    }
+    100% {
+        background-color: #c9a0dc;
+    }
+}
+
+.iridescent-bg {
+    animation: cool-iridescent-anim 5s infinite linear alternate-reverse;
+}
+
+.iridescent-bg-fast {
+    animation: cool-iridescent-anim 1s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: -7px;
+    text-shadow:
+        -7px 0 #00fff9,
+        5px 0 #ff00c8;
+    clip: rect(440px, 450px, 560px, 0);
+    animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+@keyframes glitch-anim {
+    0% {
+        clip: rect(-142px, 9999px, 104px, 10);
+    }
+    5% {
+        clip: rect(-12px, 9999px, 159px, 0);
+    }
+    10% {
+        clip: rect(-148px, 9999px, 129px, 0);
+    }
+    15% {
+        clip: rect(-42px, 9999px, 173px, 0);
+    }
+    20% {
+        clip: rect(-163px, 9999px, 127px, 0);
+    }
+    25% {
+        clip: rect(-34px, 9999px, 155px, 0);
+    }
+    30% {
+        clip: rect(-186px, 9999px, 173px, 1000);
+    }
+    35% {
+        clip: rect(-20px, 9999px, 120px, 0);
+    }
+    40% {
+        clip: rect(26px, 9999px, 360px, 0);
+    }
+    45% {
+        clip: rect(25px, 9999px, 166px, 0);
+    }
+    50% {
+        clip: rect(57px, 9999px, 198px, 0);
+    }
+    55% {
+        clip: rect(5px, 9999px, 146px, 0);
+    }
+    60% {
+        clip: rect(82px, 9999px, 131px, 0);
+    }
+    65% {
+        clip: rect(54px, 9999px, 127px, 0);
+        filter: blur(0px);
+    }
+    70% {
+        clip: rect(-228px, 9999px, 199px, 0);
+    }
+    75% {
+        clip: rect(-145px, 9999px, 169px, 0);
+    }
+    80% {
+        clip: rect(23px, 9999px, 185px, 0);
+    }
+    85% {
+        clip: rect(154px, 9999px, 184px, 0);
+    }
+    90% {
+        clip: rect(145px, 9999px, 247px, 0);
+        filter: blur(2px);
+    }
+    95% {
+        clip: rect(137px, 9999px, 120px, 0);
+    }
+    100% {
+        clip: rect(173px, 9999px, 2199px, 0);
+    }
+}
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(65px, 9999px, 80px, 0);
+    }
+    5% {
+        clip: rect(52px, 9999px, 74px, 0);
+    }
+    10% {
+        clip: rect(79px, 9999px, 85px, 0);
+    }
+    15% {
+        clip: rect(5px, 9999px, 15px, 0);
+    }
+    20% {
+        clip: rect(167px, 9999px, 161px, 0);
+    }
+    25% {
+        clip: rect(14px, 9999px, 39px, 0);
+        /*filter: invert();*/
+    }
+    30% {
+        clip: rect(1px, 9999px,6px, 0);
+    }
+    35% {
+        clip: rect(86px, 9999px, 30px, 0);
+    }
+    40% {
+        clip: rect(123px, 9999px, 198px, 0);
+    }
+    45% {
+        clip: rect(85px, 9999px, 72px, 0);
+    }
+    50% {
+        clip: rect(71px, 9999px, 75px, 0);
+    }
+    55% {
+        clip: rect(12px, 9999px, 48px, 0);
+    }
+    60% {
+        clip: rect(130px, 9999px, 156px, 0);
+    }
+    65% {
+        clip: rect(59px, 9999px, 50px, 0);
+    }
+    70% {
+        clip: rect(41px, 9999px, 62px, 0);
+    }
+    75% {
+        clip: rect(2px, 9999px, 82px, 0);
+    }
+    80% {
+        clip: rect(47px, 9999px, 73px, 0);
+    }
+    85% {
+        clip: rect(3px, 9999px, 27px, 0);
+    }
+    90% {
+        clip: rect(26px, 9999px, 55px, 0);
+    }
+    95% {
+        clip: rect(72px, 9999px, 97px, 0);
+    }
+    100% {
+        clip: rect(38px, 9999px, 49px, 0);
+    }
+}
+.glitch-effect {
+    animation: glitch 0s infinite;
+}
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-10px, 20px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 5px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #5a2a82;
+    color: #8a7a9a;
+    font-size: 14px;
+}
+.highlight {
+    color: #c9a0dc;
+    text-shadow: 0 0 12px rgba(255, 10, 12, 2.9);
+    font-weight: bold;
+}
+
+#nextButton {
+    height: 68px;
+    width: 96px;
+    margin-left: 10px;
+    background-color: slateblue;
+    border: solid #dddddd 0px;
+    border-radius: 5px;
+}
+
+#radio {
+    border: solid #dddddd 6px;
+    border-radius: 5px;
+}
+
+#bgtext {
+    position: absolute;
+    transform: rotate(20deg) scale(10) skew(20deg, 10deg);
+    z-index: -1;
+    margin-left: 30%;
+    margin-top: 40%;
+}
+
+
+.player {
+    position: sticky;
+    z-index: 1;
+    top: 10px;
+    left: 100px;
+}
+
+.brbrbutton {
+    background-color: black;
+    border: solid red 3px;
+    margin-left: 1000px;
+}
+.sbrbrbutton {
+    background-color: black;
+    border: solid red 3px;
+    margin-left: 1000px;
+}
+
+.brbrbutton:hover::before {
+    content: "⚠️⚠️⚠️ ->";
+    color: yellow;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url("./okak.gif");
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    background: url("./okak.gif");
+    cursor: pointer;
+}
+
+#loltarget {
+width: 100px;
+height: 100px;
+background: linear-gradient(45deg, #ffffff, #000000);
+border-radius: 12px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: randomAnimation 4s infinite;
+}
+#lolslowtarget {
+width: 100px;
+height: 100px;
+background: linear-gradient(45deg, #ffff00, #002222);
+border-radius: 12px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+animation: randomAnimation 30s infinite;
+}
+@keyframes randomAnimation {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1) rotate(-599deg);
+    }
+    15% {
+        transform: translate(-50%, -50%) scale(1.8, 1.2) rotate(70deg);
+    }
+    20% {
+        transform: translate(-50%, -50%) scale(1.2, 0.8) rotate(120deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) scale(0.9, 1.1) rotate(250deg);
+    }
+}
+
+.bouncing-cat {
+    width: 250px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5000px;
+    left: 50%;
+    pointer-events: none;
+    z-index: 1;
+    image-rendering: crisp-edges;
+}
+
+.hidden-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hidden-content.visible {
+    display: block;
+    opacity: 1;
+}
